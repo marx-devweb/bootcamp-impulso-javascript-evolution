@@ -10,116 +10,188 @@
 </head>
 
 <body>
-    <div id="container-principal">
-        <section class="container-section tm-tela">
-            <main class="container-main">
-                <article class="container-article">
-                    <div class="container-template-iphone">
+    <div id="container-geral">
+        <section class="container-section">
+            <main class="container-main bg-main">
+                <article class="container-conteudo">
+                    <div class="template-iphone">
                         <img src="assets/imagens/tela-login.png" alt="Template Iphone">
                     </div>
 
-                    <div class="container-lateral">
-                        <div class="container-area-login">
-                            <div class="area-logo">
-                                <img class="logo" src="assets/imagens/instagram-logo.png" alt="Logo Instagram">
+                    <div class="container-login">
+                        <div class="area-login">
+                            <div class="logo" aria-disabled="false" style="cursor: pointer;">
+                                <img src="assets/imagens/instagram-logo.png" alt="Logo Instagram">
                             </div>
 
-                            <div class="area-login">
-                                <form id="loginForm" method="post" class="area-formulario">
-                                    <div class="conteudo-formulario">
-                                        <div class="area-usuario">
-                                            <div class="campo-usuario">
-                                                <label class="descricao-usuario">
+                            <div class="container-formulario">
+                                <form id="loginForm " class="formulario" method="post">
+                                    <div class="areas-formulario">
+                                        <!--INICIO INPUT TYPE NOME DE USUÁRIO-->
+                                        <div class="container-input">
+                                            <div class="area-input">
+                                                <label class="descricao-input">
                                                     <span class="texto-descricao">Telefone, nome de usuário ou
                                                         email</span>
-
-                                                    <input aria-label="Telefone, nome de usuário ou email"
-                                                        aria-required="true" autocapitalize="none" autocorrect="off"
-                                                        maxlength="75" name="username" type="text"
-                                                        class="input-usuario" value="">
+                                                    <input class="input" type="text" value="">
                                                 </label>
-
                                             </div>
+                                        </div>
+                                        <!--FINAL INPUT TYPE NOME DE USUÁRIO-->
 
+                                        <!--INICIO INPUT TYPE SENHA-->
+                                        <div class="container-input">
+                                            <div class="area-input">
+                                                <label class="descricao-input">
+                                                    <span class="texto-descricao">Senha</span>
+                                                    <input class="input" type="password" value="">
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <input name="password" type="password" value="">
-                                        </div>
-                                        <div>
-                                            <button>
-                                                Entrar
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                            <div>OU</div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <button>
-                                                <span class=""></span>
-                                                <span class="">Entrar com o Facebook</span>
-                                            </button>
+                                        <!--FINAL INPUT TYPE SENHA-->
+
+                                        <!--INÍCIO BUTTON ENTRAR-->
+                                        <div class="area-bntEntrar">
+                                            <button class="btnEntrar" type="submit" disabled="">Entrar</button>
                                         </div>
 
+
+                                        <div class="area-divisao">
+                                            <div class="traco"></div>
+                                            <div class="ou">OU</div>
+                                            <div class="traco"></div>
+                                        </div>
+
+
+                                        
+                                        <div class="area-entrarFacebook"></div>
                                     </div>
-
-                                    <a href="">Esqueceu a senha?</a>
+                                    <a class="area-esqueceuSenha" href="#">Esqueceu a senha?</a>
                                 </form>
+
                             </div>
                         </div>
 
-                        <div class="container-cadastrar">
-                            <p>
-                                Não tem uma conta?
-                                <a href="https://www.instagram.com/accounts/emailsignup/">Cadastre-se</a>
-                            </p>
-                        </div>
+                        <div class="area-cadastrar"></div>
 
-                        <div class="container-obter-app">
-                            <p>Obtenha o aplicativo</p>
-                            <div class="button-app">
-                                <a href=""><img src="assets/imagens/apple-button.png" alt=""></a>
-                                <a href=""><img src="assets/imagens/googleplay-button.png" alt=""></a>
-                            </div>
-                        </div>
+                        <div class="area-app"></div>
+
                     </div>
+
+
+
                 </article>
             </main>
 
-            <footer class="container-footer">
-                <div class="container-opcoes-1">
-                    <div>
-                        <a href="#">Meta</a>
-                        <a href="#">Sobre</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Carreiras</a>
-                        <a href="#">Ajuda</a>
-                        <a href="#">API</a>
-                        <a href="#">Privacidade</a>
-                        <a href="#">Termos</a>
-                        <a href="#">Principais contas</a>
-                        <a href="#">Hashtags</a>
-                        <a href="#">Localizações</a>
-                        <a href="#">Instagram Lite</a>
-                        <a href="#">Carrefamento de contatos e não usuários</a>
-                    </div>
-                    <div>
-                        <a href="#">Dança</a>
-                        <a href="#">Comida e bebida</a>
-                        <a href="#">Casa e jardim</a>
-                        <a href="#">Música</a>
-                        <a href="#">Artes visuais</a>
-                    </div>
-                </div>
-
-                <div class="container-opcoes-2">
-                    <div><span>Português (Brasil)</span></div>
-                    <div>© 2022 Instagram from Meta</div>
-                </div>
-            </footer>
+            <footer class="container-footer"></footer>
         </section>
     </div>
+
+    <!--
+        <main class="container-main">
+            <article class="container-article">
+                <div class="container-template-iphone">
+                    <img src="assets/imagens/tela-login.png" alt="Template Iphone">
+                </div>
+
+                <div class="container-lateral">
+                    <div class="container-login">
+                        <div class="logo">
+                            <img src="assets/imagens/instagram-logo.png" alt="Logo Instagram">
+                        </div>
+
+                        <div class="area-login">
+                            <form id="loginForm" method="post" class="area-formulario">
+                                <div class="formulario">
+                                    <div class="area-usuario">
+                                        <div class="campo-usuario">
+                                            <label class="descricao-usuario">
+                                                <span class="texto-descricao">Telefone, nome de usuário ou
+                                                    email</span>
+
+                                                <input aria-label="Telefone, nome de usuário ou email"
+                                                    aria-required="true" autocapitalize="none" autocorrect="off"
+                                                    maxlength="75" name="username" type="text" class="input-usuario"
+                                                    value="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input name="password" type="password" value="">
+                                    </div>
+                                    <div>
+                                        <button>
+                                            Entrar
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <div></div>
+                                        <div>OU</div>
+                                        <div></div>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            <span class=""></span>
+                                            <span class="">Entrar com o Facebook</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a href="">Esqueceu a senha?</a>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="container-cadastrar">
+                        <p>
+                            Não tem uma conta?
+                            <a href="https://www.instagram.com/accounts/emailsignup/">Cadastre-se</a>
+                        </p>
+                    </div>
+
+                    <div class="container-obter-app">
+                        <p>Obtenha o aplicativo</p>
+                        <div class="button-app">
+                            <a href=""><img src="assets/imagens/apple-button.png" alt="" style="width: 100px;"></a>
+                            <a href=""><img src="assets/imagens/googleplay-button.png" alt="" style="width: 100px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer class="container-footer">
+            <div class="container-opcoes-1">
+                <div>
+                    <a href="#">Meta</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Carreiras</a>
+                    <a href="#">Ajuda</a>
+                    <a href="#">API</a>
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos</a>
+                    <a href="#">Principais contas</a>
+                    <a href="#">Hashtags</a>
+                    <a href="#">Localizações</a>
+                    <a href="#">Instagram Lite</a>
+                    <a href="#">Carrefamento de contatos e não usuários</a>
+                </div>
+                <div>
+                    <a href="#">Dança</a>
+                    <a href="#">Comida e bebida</a>
+                    <a href="#">Casa e jardim</a>
+                    <a href="#">Música</a>
+                    <a href="#">Artes visuais</a>
+                </div>
+            </div>
+
+            <div class="container-opcoes-2">
+                <div><span>Português (Brasil)</span></div>
+                <div>© 2022 Instagram from Meta</div>
+            </div>
+        </footer>
+        -->
+
 </body>
 
 </html>
